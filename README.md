@@ -1,5 +1,6 @@
 # Puppeteer Automation Project
 
+This project demonstrate the browser automation using puppeteer 
 
 ## Setup the Project
 

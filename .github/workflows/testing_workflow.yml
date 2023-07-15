@@ -1,0 +1,22 @@
+name: Automation Testing
+
+on:
+  push:
+    branches: [main,master]
+  pull_request:
+    branches: [main,master]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup node env
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+      - name: Install the dependecies and Running test
+        run: |
+          npm ci
+          npm run test
