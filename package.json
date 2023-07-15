@@ -1,0 +1,17 @@
+{
+  "name": "automation_project",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node automation.js && exit 1",
+    "test": "node automation.js && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^20.8.2"
+  }
+}
